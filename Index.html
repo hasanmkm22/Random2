@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Khaled Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #000;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 2px solid #0ff;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #0ff;
+      text-shadow: 0 0 15px #0ff;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #0ff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #00f0ff;
+      text-shadow: 0 0 15px #00f0ff;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 35px rgba(0, 255, 255, 0.5);
+    }
+
+    .card h2 {
+      color: #0ff;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 5px #0ff;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skills-list span {
+      background: #0ff2;
+      border: 1px solid #0ff6;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      color: #e0faff;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      background-color: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 768px) {
+      main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero {
+        font-size: 2.8rem;
+      }
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Salah Portfolio</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    Salah (3llawi 7abeeb 8albi)
+  </div>
+
+  <main>
+    <div class="card" id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a future-focused 3llawi passionate about acheiving as much as possible in a clean, efficient, and elegant matter. 
+        Always exploring new transitions and trends to stay ahead of the curve.
+      </p>
+    </div>
+
+    <div class="card" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span>Tum Tum Tum Sahur</span>
+        <span>Tralalilo Tralala</span>
+        <span>Chupapi Munanyo</span>
+        <span>About a week ago week ago</span>
+      </div>
+    </div>
+
+    <div class="card" id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Gaming Room:</strong>LED lights everywhere </li>
+        <li><strong>Dome:</strong>I have no idea what he does in work </li>
+        <li><strong>Creative Closets:</strong>Still have no idea what he did </li>
+      </ul>
+    </div>
+
+    <div class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Email: Salaheddinmkm@gmail.com</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Salaheddin. All rights reserved.
+  </footer>
+</body>
+</html>
